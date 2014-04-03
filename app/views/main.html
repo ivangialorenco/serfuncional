@@ -1,0 +1,66 @@
+<div class="header col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	<img src="images/logo.jpg">
+</div>
+<div class="menu col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	<ul class="nav nav-pills pull-left">
+		<li class="active"><a ng-href="#">Home</a></li>
+		<li><a ng-href="#">A Empresa</a></li>
+		<li><a ng-href="#">Serviços</a></li>
+		<li><a ng-href="#">Equipe</a></li>
+		<li><a ng-href="#">Depoimentos</a></li>
+		<li><a ng-href="#">Contato</a></li>
+	</ul>
+	<div class="pull-right">
+		<button type="button" class="btn btn-default">
+			<span class="glyphicon glyphicon-earphone"></span>
+			(48) 4141 0662
+		</button>
+	</div>
+</div>
+
+<div class="carousel col-md-12 col-xs-12 col-sm-12">
+	<carousel interval="5000">
+		<slide ng-repeat="image in images">
+			<img class="carousel-image" style="background-image: url({{image.url}}); background-position: {{image.left}} {{image.top}}">
+		</slide>
+	</carousel>
+</div>
+
+<div class="middle-content col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	<img src="http://www.ucs.br/portais/cecs/manager/14336/visualizar/" class="initial-image">
+	<h1>Ser Funcional</h1>
+
+	Ser Funcional - Espaço de Fisioterapia oferece serviços de reabilitação física, bem estar e promoção de saúde. Tem como objetivo primar pela qualidade e
+	excelência nos seus serviços, e para isso, oferece atendimento individual e personalizado aos seus clientes.
+	<br><br>
+	<a href="">saiba mais</a>
+</div>
+
+<div class="footer col-xs-12 col-sm-12">
+	<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-10 col-xs-offset-1">
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<span class="glyphicon glyphicon-map-marker col-md-2 col-sm-2 col-xs-2"></span>
+			<span class="col-md-10 col-sm-10 col-xs-10">
+				Rua Orlando Silva, 95<br>
+				Roçado | São José, SC<br>
+				88108-240
+			</span>
+		</div>
+
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<span class="glyphicon glyphicon-earphone col-md-2 col-sm-2 col-xs-2"></span>
+			<span class="col-md-10 col-sm-10 col-xs-10" style="word-wrap: break-word">
+				Tel: (48) 4141.0662<br>
+				<a href="mailto: serfuncional@bol.com.br">serfuncional@bol.com.br</a>
+			</span>
+		</div>
+
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="social-container">
+				<img src="images/fb-icon.jpg">
+				<img src="images/twitter-icon.jpg">
+				<img src="images/email-icon.jpg">
+			</div>
+		</div>
+	</div>
+</div>
