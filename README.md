@@ -1,4 +1,0 @@
-serfuncional
-============
-
-Ser Funcional Website
