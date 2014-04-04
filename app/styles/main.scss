@@ -1,6 +1,8 @@
-$icon-font-path: "/novo/fonts/";
+//$icon-font-path: "/novo/fonts/";
+$icon-font-path: "/fonts/";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import "overrides";
 
 $main-blue : #186380;
 $main-gray : #A7A7A7;
@@ -10,6 +12,13 @@ $font-color-default : #777777;
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
+
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+//}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -24,6 +33,7 @@ $font-color-default : #777777;
 }
 
 body {
+  font-face: $baseFontFamily;
   padding-top: 20px;
   color: $font-color-default;
 }

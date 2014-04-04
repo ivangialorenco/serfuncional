@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('serfuncionalApp')
-	.controller('MainCtrl', function ($scope, $rootScope) {
+	.controller('ServicesCtrl', function ($scope) {
 
 		$scope.images = [
 			{
@@ -26,7 +26,7 @@ angular.module('serfuncionalApp')
 			}
 		];
 
-		$rootScope.services = [
+		$scope.services = [
 			{
 				name : 'Fisioterapia',
 				url : 'fisioterapia'
