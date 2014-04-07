@@ -1,29 +1,4 @@
-<div class="header col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-	<img src="images/logo.jpg">
-</div>
-<div class="menu col-md-10 col-md-offset-1 col-sm-12 col-xs-12" ng-controller="MainCtrl">
-	<ul class="nav nav-pills pull-left">
-		<li class="active"><a ng-href="#">Home</a></li>
-		<li><a ng-href="#">A Empresa</a></li>
-		<li class="dropdown">
-			<a class="dropdown-toggle">Serviços</a>
-			<ul class="dropdown-menu">
-				<li ng-repeat="service in services">
-					<a>{{service.name}}</a>
-				</li>
-			</ul>
-		</li>
-		<li><a ng-href="#">Equipe</a></li>
-		<li><a ng-href="#">Depoimentos</a></li>
-		<li><a ng-href="#">Contato</a></li>
-	</ul>
-	<div class="pull-right">
-		<button type="button" class="btn btn-default">
-			<span class="glyphicon glyphicon-earphone"></span>
-			(48) 4141 0662
-		</button>
-	</div>
-</div>
+<div ng-include src="'views/header.html'"></div>
 
 <div class="carousel col-md-12 col-xs-12 col-sm-12">
 	<carousel interval="5000">
@@ -33,7 +8,7 @@
 	</carousel>
 </div>
 
-<div class="middle-content col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+<div class="middle-content mainpage col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 	<img src="http://www.ucs.br/portais/cecs/manager/14336/visualizar/" class="initial-image">
 	<h1>Ser Funcional</h1>
 
@@ -43,6 +18,4 @@
 	<a href="">saiba mais</a>
 </div>
 
-<div class="footer col-xs-12 col-sm-12" ng-include src="'views/footer.html'">
-
-</div>
+<div class="footer col-xs-12 col-sm-12" ng-include src="'views/footer.html'"></div>

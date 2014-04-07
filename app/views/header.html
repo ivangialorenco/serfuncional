@@ -1,0 +1,22 @@
+<div class="header col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	<img src="images/logo.jpg">
+</div>
+<div class="menu col-md-10 col-md-offset-1 col-sm-12 col-xs-12" ng-controller="HeaderCtrl">
+	<ul class="nav nav-pills pull-left">
+		<li ng-class="{'dropdown': item.submenu}; menuClass('{{item.url}}')" ng-repeat="item in menu">
+			<a ng-href="#{{item.url}}" ng-if="!item.submenu">{{item.name}}</a>
+			<a class="dropdown-toggle" ng-if="item.submenu">{{item.name}}</a>
+			<ul class="dropdown-menu" ng-if="item.submenu">
+				<li ng-repeat="submenu in item.submenu">
+					<a href="#{{submenu.url}}">{{submenu.name}}</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="pull-right">
+		<button type="button" class="btn btn-default">
+			<span class="glyphicon glyphicon-earphone"></span>
+			(48) 4141 0662
+		</button>
+	</div>
+</div>

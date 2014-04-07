@@ -1,5 +1,5 @@
 $icon-font-path: "/novo/fonts/";
-//$icon-font-path: "/fonts/";
+$icon-font-path: "/fonts/";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import "overrides";
@@ -66,12 +66,12 @@ h1 {
 
   .nav-pills {
     li {
-      &.active a, &.active a:hover, a:hover {
+      &.active > a, &.active > a:hover, a:hover {
         color: $font-color-light-default;
         background-color: $main-blue;
       }
 
-      a {
+      > a {
         padding: 5px 15px;
         color: $main-blue;
       }
@@ -125,9 +125,12 @@ h1 {
   padding: 10px;
   margin-top: 40px;
   margin-bottom: 10px;
-  padding-top: 30px;
   padding-bottom: 30px;
   vertical-align: top;
+
+  &.mainpage {
+    padding-top: 30px;
+  }
 }
 
 .footer {
@@ -170,4 +173,15 @@ h1 {
   border: 5px solid $main-gray;
   margin-right: 50px;
   vertical-align: text-top;
+}
+
+.no-content-enough {
+ min-height: 589px;
+}
+
+// service
+
+.services {
+  padding-top: 0px !important;
+
 }

@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('serfuncionalApp')
-	.controller('MainCtrl', function ($scope, $rootScope) {
-
+	.controller('MainCtrl', function ($scope) {
 		$scope.images = [
 			{
 				url : 'http://blog.shopfisio.com.br/wp-content/uploads/2013/06/terapiamanuale1.jpg',
@@ -23,37 +22,6 @@ angular.module('serfuncionalApp')
 				url : 'http://www.rafinhagadelha.com.br/wp-content/uploads/2013/07/pilates2.jpg',
 				left : '0px',
 				top : '0px'
-			}
-		];
-
-		$rootScope.services = [
-			{
-				name : 'Fisioterapia',
-				url : 'fisioterapia'
-			},
-			{
-				name : 'Hidroterapia',
-				url : 'hidroterapia'
-			},
-			{
-				name : 'Pilates',
-				url : 'pilates'
-			},
-			{
-				name : 'RPG',
-				url : 'rpg'
-			},
-			{
-				name : 'Massagem Estética',
-				url : 'massagem-estetica'
-			},
-			{
-				name : 'Drenagem Linfática',
-				url : 'drenagem-linfatica'
-			},
-			{
-				name : 'Massagem Relaxante',
-				url : 'massagem-relaxante'
 			}
 		];
 	});
