@@ -4,6 +4,16 @@ angular.module('serfuncionalApp')
 	.controller('HeaderCtrl', function ($scope, $rootScope, $location) {
 		$rootScope.services = [
 			{
+				name : 'Drenagem Linfática Manual',
+				url : '/servicos?pagina=drenagem-linfatica',
+				content : 'drenagem-linfatica.html'
+			},
+			{
+				name : 'Estética Corporal',
+				url : '/servicos?pagina=estetica-corporal',
+				content : 'estetica-corporal.html'
+			},
+			{
 				name : 'Fisioterapia',
 				url : '/servicos?pagina=fisioterapia',
 				content : 'fisioterapia.html'
@@ -14,29 +24,29 @@ angular.module('serfuncionalApp')
 				content : 'hidroterapia.html'
 			},
 			{
+				name : 'Kinesio Tape',
+				url : '/servicos?pagina=kinesio',
+				content : 'kinesio.html'
+			},
+			{
+				name : 'Massagem Relaxante/Terapêutica',
+				url : '/servicos?pagina=massagem-relaxante',
+				content : 'massagem-relaxante.html'
+			},
+			{
+				name : 'Nutrição',
+				url : '/servicos?pagina=nutricao',
+				content : 'nutricao.html'
+			},
+			{
 				name : 'Pilates',
 				url : '/servicos?pagina=pilates',
 				content : 'pilates.html'
 			},
 			{
-				name : 'RPG',
+				name : 'RPG/RPM',
 				url : '/servicos?pagina=rpg',
 				content : 'rpg.html'
-			},
-			{
-				name : 'Massagem Estética',
-				url : '/servicos?pagina=massagem-estetica',
-				content : 'massagem-estetica.html'
-			},
-			{
-				name : 'Drenagem Linfática',
-				url : '/servicos?pagina=drenagem-linfatica',
-				content : 'drenagem-linfatica.html'
-			},
-			{
-				name : 'Massagem Relaxante',
-				url : '/servicos?pagina=massagem-relaxante',
-				content : 'massagem-relaxante.html'
 			}
 		];
 
