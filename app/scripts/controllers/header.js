@@ -69,8 +69,8 @@ angular.module('serfuncionalApp')
 				url : '/equipe'
 			},
 			{
-				name : 'Depoimentos',
-				url : '/depoimentos'
+				name : 'Parceiros',
+				url : '/parceiros'
 			},
 			{
 				name : 'Contato',
@@ -87,4 +87,16 @@ angular.module('serfuncionalApp')
 				return '';
 			}
 		};
+
+		$rootScope.showGallery = function() {
+			$('#galleryPhoto , #galleryPhoto2, #galleryPhoto3').galleryView({
+				panel_width: 600,
+				panel_height: 400,
+				panel_animation: 'crossfade',
+				panel_scale: 'fit',
+				autoplay: 'true'
+			});
+
+
+		}
 	});

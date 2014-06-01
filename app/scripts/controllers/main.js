@@ -4,24 +4,28 @@ angular.module('serfuncionalApp')
 	.controller('MainCtrl', function ($scope) {
 		$scope.images = [
 			{
-				url : 'http://blog.shopfisio.com.br/wp-content/uploads/2013/06/terapiamanuale1.jpg',
+				url : 'images/pictures/banner/SerFuncional-149.jpg',
 				left : '0px',
-				top : '0px'
+				top : '-400px',
+				text : 'Promoção de Saúde e Qualidade de Vida'
 			},
 			{
-				url : 'http://www.clinicaciclos.com.br/upload/revista-pilates-ataxia1.jpg',
+				url : 'images/pictures/banner/SerFuncional-166.jpg',
 				left : '0px',
-				top : '0px'
+				top : '-400px',
+				text : 'Conheça a Ser Funcional'
 			},
 			{
-				url : 'http://bellavidasaudeebemestar.com.br/wp-content/uploads/2011/05/iStock_000005718166Medium.jpg',
+				url : 'images/pictures/banner/SerFuncional-114.jpg',
 				left : '0px',
-				top : '0px'
+				top : '-180px',
+				text : '"Realize seu exercício com o mínimo de esforço e o máximo de prazer" Joseph Pilates'
 			},
 			{
-				url : 'http://www.rafinhagadelha.com.br/wp-content/uploads/2013/07/pilates2.jpg',
+				url : 'images/pictures/banner/SerFuncional-201.jpg',
 				left : '0px',
-				top : '0px'
+				top : '-500px',
+				text : 'Atendimentos individuais e personalizados'
 			}
 		];
 	});

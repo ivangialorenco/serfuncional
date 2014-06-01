@@ -20,14 +20,14 @@ angular
 			})
 			.when('/aempresa', {
 				templateUrl: 'views/aempresa.html',
-				controller: 'MainCtrl'
+				controller: 'AEmpresaCtrl'
 			})
 			.when('/equipe', {
 				templateUrl: 'views/equipe.html',
-				controller: 'MainCtrl'
+				controller: 'AEquipeCtrl'
 			})
-			.when('/depoimentos', {
-				templateUrl: 'views/depoimentos.html',
+			.when('/parceiros', {
+				templateUrl: 'views/parceiros.html',
 				controller: 'MainCtrl'
 			})
 			.when('/contato', {

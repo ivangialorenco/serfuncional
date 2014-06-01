@@ -4,18 +4,20 @@
 	<carousel interval="5000">
 		<slide ng-repeat="image in images">
 			<img class="carousel-image" style="background-image: url({{image.url}}); background-position: {{image.left}} {{image.top}}">
+			<div class="banner-text" ng-bind="image.text"></div>
 		</slide>
 	</carousel>
 </div>
 
 <div class="middle-content mainpage col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-	<img src="http://www.ucs.br/portais/cecs/manager/14336/visualizar/" class="initial-image">
+	<img src="images/pictures/SerFuncional-200.jpg" class="initial-image default-image">
 	<h1>Ser Funcional</h1>
 
-	Ser Funcional - Espaço de Fisioterapia oferece serviços de reabilitação física, bem estar e promoção de saúde. Tem como objetivo primar pela qualidade e
-	excelência nos seus serviços, e para isso, oferece atendimento individual e personalizado aos seus clientes.
+	A Ser Funcional - Espaço de Fisioterapia oferece serviços de Fisioterapia, Hidroterapia,
+	RPG (Reeducação Postural Global), Pilates, Massoterapia, Estética Corporal e Nutrição. Realiza atendimentos
+	personalizados, primando pela excelência e qualidade dos serviços prestados.
 	<br><br>
-	<a href="">saiba mais</a>
+	<a href="#/aempresa">saiba mais</a>
 </div>
 
 <div class="footer col-xs-12 col-sm-12" ng-include src="'views/footer.html'"></div>

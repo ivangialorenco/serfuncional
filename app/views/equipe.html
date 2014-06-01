@@ -1,31 +1,23 @@
 <div ng-include src="'views/header.html'"></div>
 
 <div class="middle-content col-md-10 col-md-offset-1 col-sm-12 col-xs-12 no-content-enough">
-	<p>
-		Fabiane Salvador Sagaz<br>
-		CREFITO 10 136910-F
-	</p>
 
-	<p>
-		Fisioterapeuta graduada pela Universidade do Estado de Santa Catarina - UDESC
-		Formação em RPG/RPM pelo Instituto Barreiros
-	</p>
+	<ul class="team">
+		<li ng-repeat="person in team" ng-click="selectPerson(person.id)" ng-class="{true:'active', false:''}[selectedPerson == person.id]">
+			<div class="picture" style="background-image: url({{person.picture}}); background-position: {{person.backgroundPos}}">
+			</div>
+			<span class="name">{{person.name}}</span>
+		</li>
+	</ul>
 
-
-	<p>
-		Bárbara Castro Oltramari Borghesan
-	</p>
-
-
-	<p>
-		CREFITO 10 2811 LTT/F
-	</p>
-
-	<p>
-		Fisioterapeuta graduada pela Universidade do Estado de Santa Catarina - UDESC<br>
-		Formação em Pilates pela Metacorpus
-	</p>
-
+	<div class="team-info">
+		<ul class="degree-description" ng-repeat="person in team">
+			<li ng-if="selectedPerson == person.id && person.crefito10" style="list-style-type: none"><h3>Crefito 10: {{person.crefito10}}</h3></li>
+			<li ng-if="selectedPerson == person.id && person.crn10" style="list-style-type: none"><h3>CRN 10: {{person.crn10}}</h3></li>
+			<li ng-repeat="degree in person.degree" ng-bind="degree.description" ng-if="selectedPerson == person.id"></li>
+		</ul>
+	</div>
 </div>
 
 <div class="footer col-xs-12 col-sm-12" ng-include="'views/footer.html'"></div>
+
