@@ -90,13 +90,10 @@ angular.module('serfuncionalApp')
 
 		$rootScope.showGallery = function() {
 			$('#galleryPhoto , #galleryPhoto2, #galleryPhoto3').galleryView({
-				panel_width: 600,
-				panel_height: 400,
+				panel_width:  500,
+				panel_height: 333,
 				panel_animation: 'crossfade',
-				panel_scale: 'fit',
-				autoplay: 'true'
+				panel_scale: 'fit'
 			});
-
-
 		}
 	});

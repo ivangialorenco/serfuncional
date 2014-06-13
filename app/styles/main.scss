@@ -1,5 +1,5 @@
 $icon-font-path: "/novo/fonts/";
-//$icon-font-path: "/fonts/";
+$icon-font-path: "/fonts/";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import "overrides";
@@ -9,7 +9,8 @@ $main-gray : #A7A7A7;
 $font-color-light-default : #f2f2f2;
 $font-color-default : #777777;
 $img-border: 5px solid #C9C9C9;
-$carousel-height: 450px;
+$carousel-height: 550px;
+$max-screen-width: 1200px;
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
@@ -72,7 +73,7 @@ h3 {
   padding-bottom: 19px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 100% !important;
   }
@@ -100,7 +101,8 @@ h3 {
 .carousel {
   width: 100% !important;
   height: $carousel-height;
-  margin-top:30px;
+  margin-top:0px;
+  margin-bottom: 30px;
 
   &.col-sm-12, &.col-xs-12 {
     padding: 0px;
@@ -110,7 +112,7 @@ h3 {
   .carousel-image {
     height: $carousel-height !important;
     width: 100%;
-    background-size: 1700px;
+    background-size: $max-screen-width;
   }
 
   .caroulse-inner {
@@ -155,14 +157,10 @@ h3 {
 
   min-height: 269px;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
   padding-bottom: 30px;
   vertical-align: top;
-
-  &.mainpage {
-    padding-top: 30px;
-  }
 }
 
 .footer {
@@ -253,10 +251,22 @@ h3 {
 
 .parceiros {
   text-align: center;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 0px;
+  padding-left: 0px;
+
+  li {
+    display: inline;
+    float: left;
+    height: 200px;
+  }
 
   img {
-    margin: 30px;
     width: 150px;
+    margin-right: 60px;
+    vertical-align: top;
+    margin-bottom: 5px;
   }
 }
 

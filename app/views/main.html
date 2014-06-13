@@ -1,23 +1,26 @@
 <div ng-include src="'views/header.html'"></div>
 
-<div class="carousel col-md-12 col-xs-12 col-sm-12">
-	<carousel interval="5000">
-		<slide ng-repeat="image in images">
-			<img class="carousel-image" style="background-image: url({{image.url}}); background-position: {{image.left}} {{image.top}}">
-			<div class="banner-text" ng-bind="image.text"></div>
-		</slide>
-	</carousel>
-</div>
+<div class="middle-content col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	<div class="carousel">
+		<carousel interval="5000">
+			<slide ng-repeat="image in images">
+				<img class="carousel-image" style="background-image: url({{image.url}}); background-position: {{image.left}} {{image.top}}">
+				<div class="banner-text" ng-bind="image.text"></div>
+			</slide>
+		</carousel>
+	</div>
 
-<div class="middle-content mainpage col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-	<img src="images/pictures/SerFuncional-200.jpg" class="initial-image default-image">
-	<h1>Ser Funcional</h1>
+	<div>
+		<img src="images/pictures/SerFuncional-200.jpg" class="initial-image default-image">
+		<h1>Ser Funcional</h1>
 
-	A Ser Funcional - Espaço de Fisioterapia oferece serviços de Fisioterapia, Hidroterapia,
-	RPG (Reeducação Postural Global), Pilates, Massoterapia, Estética Corporal e Nutrição. Realiza atendimentos
-	personalizados, primando pela excelência e qualidade dos serviços prestados.
-	<br><br>
-	<a href="#/aempresa">saiba mais</a>
+		A Ser Funcional - Espaço de Fisioterapia oferece serviços de Fisioterapia, Hidroterapia,
+		RPG (Reeducação Postural Global), Pilates, Massoterapia, Estética Corporal e Nutrição. Realiza atendimentos
+		personalizados, primando pela excelência e qualidade dos serviços prestados.
+		<br><br>
+		<a href="#/aempresa">saiba mais</a>
+	</div>
+
 </div>
 
 <div class="footer col-xs-12 col-sm-12" ng-include src="'views/footer.html'"></div>

@@ -77,9 +77,6 @@ angular.module('serfuncionalApp')
 					},
 					{
 						description : "Especialista em Nutrição Clínica pela Universidade Gama Filho."
-					},
-					{
-						description : "Curso de Kinesiotape Neuro Muscular pela Faculdade Inspirar"
 					}
 				]
 			}
